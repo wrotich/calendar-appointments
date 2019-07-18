@@ -1,5 +1,4 @@
 class AppointmentForm extends React.Component {
-
   render() {
     return (
       <div>
@@ -11,7 +10,8 @@ class AppointmentForm extends React.Component {
           <input name='time' placeholder='Date and Time'
             value={this.props.time}
             onChange={this.props.handleChange}  />
-          <input type='submit' value='Make Appointment' />
+          <input type='submit' value='Make Appointment'
+            onClick={this.props.handleSubmit} />
         </form>
       </div>
     )
